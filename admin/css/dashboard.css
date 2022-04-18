@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.rec{
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
