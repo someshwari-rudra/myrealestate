@@ -45,8 +45,7 @@ session_start();
 
                 </ul>
                 <?php if (isset($_SESSION['username'])) { ?>
-                    <button class="btn button_style shadow-none" id="Show-login" type="submit"> <a href="./logout.php">Login
-                            OUt</a></button>
+                    <button class="btn button_style shadow-none" id="Show-login" type="submit"> <a href="./logout.php">Logout</a></button>
                 <?php } else { ?>
                     <button class="btn button_style shadow-none" id="Show-login" type="submit"> <a href="./login.php">Login</a></button>
                 <?php } ?>

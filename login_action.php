@@ -9,7 +9,6 @@ if (isset($_POST['sign_in'])) {
     $query = mysqli_query($con, $email_search);
     $email_count = mysqli_num_rows($query);
 
-
     if ($email_count) {
         $email_pass = mysqli_fetch_assoc($query);
         $db_pass = $email_pass['password'];

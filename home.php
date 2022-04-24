@@ -1,6 +1,6 @@
 <?php
-include 'php/include/links.php';
 include "./config.php";
+include "php/include/links.php";
 include "php/include/navbar.php";
 ?>
 
@@ -121,7 +121,7 @@ include "php/include/navbar.php";
                         <p class="card-text px-3 mb-5">Find your Dream Home from 5 Lakh+ properties on
                             RealEstate.com.The most exciting part of the home-buying process is site visit, but it’s
                             also a big!</p>
-                        <div class="mb-3"><a href="#" class=" btn button_style px-5 mx-3 text-decoration-none align-content-center">BUY HOME</a></div>
+                        <div class="mb-3"><a href="Property.php" class=" btn button_style px-5 mx-3 text-decoration-none align-content-center">BUY HOME</a></div>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ include "php/include/navbar.php";
                         <h5 class="card-title px-3">SELL HOME</h5>
                         <p class="card-text px-3 mb-5">If you are selling a house or keen to rent a house, Makaan.com is
                             where you should be. When you open our site, continue to ‘list property’.</p>
-                        <div class="mb-3"><a href="#" class="btn button_style px-5  mx-3 text-decoration-none">SELL HOME</a>
+                        <div class="mb-3"><a href="Property.php" class="btn button_style px-5  mx-3 text-decoration-none">SELL HOME</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ include "php/include/navbar.php";
                         <h5 class="card-title px-3">RENT HOME</h5>
                         <p class="card-text px-3 mb-5">rent a home easily by using aur website realesate.com and find
                             the perfect house to live with comfort.The rent agreement can help you.</p>
-                        <div class="mb-3"><a href="#" class="btn button_style  mx-3 text-decoration-none">RENT HOME</a></div>
+                        <div class="mb-3"><a href="Property.php" class=" btn button_style mx-3 text-decoration-none">RENT HOME</a></div>
                     </div>
                 </div>
             </div>
@@ -263,3 +263,7 @@ include "php/include/navbar.php";
         </div>
     </div>
 </div>
+<?php
+include "./footer.php";
+include "php/include/scripts.php"
+?>

@@ -9,10 +9,10 @@ include 'php/include/navbar.php';
                 <h1 class="ms-4 mt-3 textcolorReg">Welcome back</h1>
                 <div class="card-body">
                     <div class="alert alert-warning" role="alert">
-                        <h4><?php 
-                        if(isset($_SESSION['msg']) && $_SESSION['msg'] !='')
-                            echo $_SESSION['msg'];
-                            unset($_SESSION['msg']) ;?></h1>
+                        <h4><?php
+                            if (isset($_SESSION['msg']) && $_SESSION['msg'] != '')
+                                echo $_SESSION['msg'];
+                            unset($_SESSION['msg']); ?></h1>
                             <!-- <button type="button" class="btn-close msg_closebtn" data-bs-dismiss="alert"></button> -->
                     </div>
                     <div class="form-group m-3">
@@ -46,7 +46,6 @@ include 'php/include/navbar.php';
         </div>
     </div>
 </section>
-
 
 </div>
 </div>

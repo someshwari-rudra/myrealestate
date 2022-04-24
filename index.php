@@ -174,12 +174,12 @@ include "php/include/navbar.php";
         </div>
         <div class="row">
             <?php
-            $query = mysqli_query($con, "SELECT  * FROM propery_details limit 3");
+            $query = mysqli_query($con, "SELECT  * FROM propery_details limit 6");
             foreach ($query as $row) {
             ?>
                 <div class="col-md-4">
                     <div class="card m-3 " style="width: 25rem;">
-                        <span class="new"><?php echo $row['selling_type']?></span>
+                        <span class="new"><?php echo $row['selling_type'] ?></span>
                         <div class="p-2">
                             <img src="property/<?php echo $row['img1']; ?>" alt="pimage" class="img-fluid">
                         </div>
@@ -217,6 +217,9 @@ include "php/include/navbar.php";
         </div>
     </div>
 </div>
+<?php
+include "./footer.php";
+?>
 
 <script src="bootstrap/js/app.js"></script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

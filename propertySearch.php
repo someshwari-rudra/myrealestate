@@ -138,3 +138,7 @@ include "./config.php";
         </div>
     </div>
 </div>
+<?php
+include "./footer.php";
+include "php/include/scripts.php"
+?>

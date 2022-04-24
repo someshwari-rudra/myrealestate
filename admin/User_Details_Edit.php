@@ -34,7 +34,7 @@ include('includes/navbar.php');
 
             <div class="container-fluid mt-5">
                 <div class="row">
-                    <h1>Edit Admin Registration Details</h1>
+                    <h1>Edit User Registration Details</h1>
                 </div>
                 <form action="code.php" method="POST">
                     <div class="modal-body">
