@@ -23,6 +23,7 @@ if (!isset($_SESSION['username'])) {
                 $id = $_POST['seeD_id'];
                 $query = mysqli_query($con, "SELECT * FROM propery_details WHERE p_id='$id' ");
                 while ($row = mysqli_fetch_array($query)) {
+                    $owner = $row['p_owner'];
             ?>
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -194,13 +195,53 @@ if (!isset($_SESSION['username'])) {
                             </div>
                         </div>
                     </div>
-        <?php
+
+                    <div class="col-md-8 mt-3">
+                        <div class="card mb-4">
+                            <h3 class="text-center text-color mt-3">Owner details</h3>
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <p class="mb-0">USer Name</p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p class="text-muted mb-0">
+                                            <?php echo $row['p_owner']; ?>
+                                        </p>
+                                    </div>
+                                </div>
+                    <?php
                 }
             }
         }
-        ?>
+                    ?>
+                    <hr>
+                    <?php
+                    $uname = $_SESSION['username'];
+                    $query = mysqli_query($con, "SELECT * FROM registration where username = '$uname'");
+                    while ($row = mysqli_fetch_array($query)) {
+                    ?>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">
+                                    <?php echo $row['email']; ?>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    <?php
+                    }
+                    ?>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
+
 
     <?php
     include "./footer.php";
